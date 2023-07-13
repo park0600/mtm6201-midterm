@@ -61,6 +61,11 @@ h2 {
     font-weight: 700;
 }
 
+h3 {
+    font-size: 1;
+    font-weight: 700;
+}
+
 h4 {
     font-size: 1rem;
     font-weight: 700;
@@ -122,8 +127,28 @@ header, footer {
 }
 
 
+/* content */
+.vision h3 {
+    color: var(--point-color);
+    text-align: ;
+    padding: 1.5rem 0;    
+}
 
+.content {
+    text-align: center;
+}
 
+.vision img {
+    width: 100%;
+}
+
+.vision h2 {
+    padding: 1.5rem 0;
+}
+
+.history {
+    background-color: var(--bg-color);
+}
 
 /* footer - search: i size, style / sns: icon, align / info: table / copyright: logo img, p align */
 
