@@ -130,7 +130,40 @@ header, footer {
 
 
 /* content */
+.content h3 {
+    color: var(--point-color);
+    padding: 1.5rem 0;    
+}
 
+.content {
+    text-align: center;
+}
+
+
+.content p {
+    padding: 0 10px 30px;
+}
+
+.info {
+    padding: 0.5rem 0;
+}
+
+.content table {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    font-size: 0.8rem;
+    font-family: 'PT Sans';
+}
+
+.content table th {
+    font-weight: 700;
+}
+
+.content table td {
+    padding: 0 0 10px 15px;
+    font-weight: 100;
+}
 
 
 
@@ -266,50 +299,45 @@ header, footer {
         padding: 0 5rem;
     }
 
-    .content {
+    .content .wrapper {
         margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, fr2);
+        grid-template-areas: 
+        "h3 h3"
+        "info map";
     }
-
-    .content h3 {
-        float: left;
-    }
-
+    
+    
     .content h2 {
         padding: 2.5rem 0;
     }
-
-    .girlphoto {
-        grid-area: girlphoto;
-    }
-
-    .story {
-        grid-area: story;
-    }
     
-    .history {
-        display: flex;
-        margin: 0;
+    .content h3 {
+        float: left;
+        padding: 0 0 0 8rem;
     }
 
-    .girlphoto .photo {
-        display: none;
+    .content .h3 {
+        grid-area: h3;
     }
 
-    .girlphoto .photo-s {
-        display: flex;
-        padding: 3rem;
-        width: 30%;
-        margin: 0;
+    .content .info {
+        grid-area: info;
     }
 
-    .history img {
-        margin: 0;
+    .content .map {
+        grid-area: map;
+        margin-right: 5rem;
+        margin-bottom: 4rem;
     }
+
+    .map iframe {
+        width: 400px;
+        height: 400px;
+    }
+
     
-    .history .photo {
-        margin: 0;
-    }
-
 
     /* footer: grid, align */
 
