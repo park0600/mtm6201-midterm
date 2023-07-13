@@ -62,7 +62,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1;
+    font-size: 1rem;
     font-weight: 700;
 }
 
@@ -73,6 +73,8 @@ h4 {
 
 p {
     font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 200;
 }
 
 
@@ -130,7 +132,6 @@ header, footer {
 /* content */
 .vision h3 {
     color: var(--point-color);
-    text-align: ;
     padding: 1.5rem 0;    
 }
 
@@ -138,7 +139,7 @@ header, footer {
     text-align: center;
 }
 
-.vision img {
+.content img {
     width: 100%;
 }
 
@@ -149,6 +150,19 @@ header, footer {
 .history {
     background-color: var(--bg-color);
 }
+
+.history p {
+    padding: 0 10px 30px;
+}
+
+.history .photo-s {
+    display: none;
+}
+
+h4 {
+    padding: 1rem 0;
+}
+
 
 /* footer - search: i size, style / sns: icon, align / info: table / copyright: logo img, p align */
 
@@ -223,10 +237,7 @@ header, footer {
 
 /* media querie */
 @media screen and (min-width: 760px) {
-    .wrapper {
-        margin: 0 auto;
-        padding: 0 5rem;
-    }
+
     
     /* font-style */
     h1 {
@@ -244,14 +255,9 @@ header, footer {
         display: none;
     }
     
-    .overlaybox {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        background-color: rgba(0, 0, 0, 0.3);
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
+    header {
+        background-color: rgba(0, 0, 0, 0);
+        padding: 1rem 0;
     }
 
     /* navigation */
@@ -272,7 +278,7 @@ header, footer {
     }
 
     .nav-desktop a {
-        color: var(--secondary-color);
+        color: var(--text-color);
         text-decoration: none;
         font-family: 'Inter';
     }
@@ -282,41 +288,58 @@ header, footer {
     }
 
 
-    .video {
+
+    /* content: grid, bg color, align */
+
+    .wrapper {
         margin: 0 auto;
-        max-width: 800px;
-    }
-
-    .video iframe {
-        height: 22.5rem;
-    }
-
-    /* content: flex, bg color, align */
-    .content-bg {
-        background-color: var(--bg-color);
+        padding: 0 5rem;
     }
 
     .content {
-        display: flex;
-    }
-    
-    .about, .shop, .contact {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 1.5rem 0;
-    }
- 
-    .about h4, .shop h4, .contact h4 {
-        padding: 1rem 0;
+        margin-top: 2rem;
     }
 
-    .about p, .shop p, .contact p {
-        text-align: center;
-        padding: 0 0.3rem;
-        font-size: 0.8rem;
-        margin-bottom: auto;
+    .content h3 {
+        float: left;
     }
+
+    .content h2 {
+        padding: 2.5rem 0;
+    }
+
+    .girlphoto {
+        grid-area: girlphoto;
+    }
+
+    .story {
+        grid-area: story;
+    }
+    
+    .history {
+        display: flex;
+        margin: 0;
+    }
+
+    .girlphoto .photo {
+        display: none;
+    }
+
+    .girlphoto .photo-s {
+        display: flex;
+        padding: 3rem;
+        width: 30%;
+        margin: 0;
+    }
+
+    .history img {
+        margin: 0;
+    }
+    
+    .history .photo {
+        margin: 0;
+    }
+
 
     /* footer: grid, align */
 
