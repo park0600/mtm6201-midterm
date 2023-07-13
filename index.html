@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comfy Skin</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://kit.fontawesome.com/0b8c2d9154.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <!-- header: logo, nav,bg img, h1, btn  -->
+    <header role="heading">
+        <div class="wrapper">
+            <div class="nav-mobile">
+                <div class="logo headerlogo">
+                    <a href="index.html"><img src="images/logo_b_320.png" alt="Logo of Comfy Skin" rolg="img"></a>
+                </div>
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="overlaybox">
+                <nav role="navigation">
+                    <ul class="nav-desktop"> 
+                        <li><a class="headerlogo" href="index.html"><img src="images/logo_g_320.png" alt="Logo of Comfy Skin" rolg="img"></a></li> 
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- main: video, h2, about, shop, contact, btn, bg color -->
+
+    <main role="main">
+        <div class="banner">
+            <h1>Eczema may not disappear.<br>
+                But the pain<br> can be conquered by us.</h1>
+            <button class="btn" type="button">
+                <span id="main-btn">Go to Shop</span>
+            </button>
+        </div>
+        <div class="video" role="complementary">
+            <h2>"Made by hand for my family"</h2>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0AC54eaT4fE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="content-bg">
+            <div class="content wrapper">
+                <div class="about" role="region">
+                    <img srcset="images/team_320.jpg 320w,
+                                images/team_640.jpg 640w,
+                                images/team_1024.jpg 1024w,
+                                images/team_1280.jpg 1280w,
+                                images/team_1920.jpg 1920w"
+                        sizes="(max-width: 320px) 320px,
+                                (max-width: 640px) 640px,
+                                (max-width: 1024px) 1024px,
+                                (max-width: 1280px) 1280px,
+                                (max-width: 1920px) 1920px"
+                        src="images/team_1920.png" alt="Picture of our Team" rolg="img">
+                    <h4>Meet Our Team</h4>
+                    <p>We always communicate with our customers and make good products that we can trust and use.</p>
+                    <button class="btn">
+                        <span id="btn-about">About Us</span>
+                    </button>
+                </div>
+
+
+                <div class="shop" role="region">
+                    <img srcset="images/cream_320.jpg 320w,
+                                images/cream_640.jpg 640w,
+                                images/cream_1024.jpg 1024w,
+                                images/cream_1280.jpg 1280w,
+                                images/cream_1920.jpg 1920w"
+                        sizes="(max-width: 320px) 320px,
+                                (max-width: 640px) 640px,
+                                (max-width: 1024px) 1024px,
+                                (max-width: 1280px) 1280px,
+                                (max-width: 1920px) 1920px"
+                        src="images/cream_1920.png" alt="Picture of our Products" rolg="img">
+                    <h4>Meet Our Products</h4>
+                    <p>Meet Comfy Skin products with good ingredients and quality.</p>
+                    <button class="btn">
+                        <span id="btn-shop">Shop</span>
+                    </button>
+                </div>
+
+                <div class="contact" role="region">
+                    <img srcset="images/contact_320.jpg 320w,
+                                    images/contact_640.jpg 640w,
+                                    images/contact_1024.jpg 1024w,
+                                    images/contact_1280.jpg 1280w,
+                                    images/contact_1920.jpg 1920w"
+                        sizes="(max-width: 320px) 320px,
+                                    (max-width: 640px) 640px,
+                                    (max-width: 1024px) 1024px,
+                                    (max-width: 1280px) 1280px,
+                                    (max-width: 1920px) 1920px"
+                        src="images/contact_1920.png" alt="Picture of touching email button" rolg="img">
+                    <h4>Business Counsel</h4>
+                    <p>Your business consultation is always welcome. Please feel free to contact us.</p>
+                    <button class="btn">
+                        <span id="btn-contact">Contact Us</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    
+    <!-- footer: form, sns, info, logo, copyright, bg color -->
+    <footer role="complementary">
+        <div class="wrapper">
+            <div class="footergrid">
+                <div class="search" role="search">
+                    <div class="form">
+                        <form role="form">
+                        <input id="search" type="search" placeholder="Search">
+                        <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+                        </form>
+                    </div>
+                    <div class="sns">
+                        <a href="#"><img width="48" height="48" src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram-new--v1" rolg="img"/></a>
+                        <a href="#"><img width="48" height="48" src="https://img.icons8.com/color/48/twitter-squared.png" alt="twitter-squared" rolg="img"/></a>
+                        <a href="#"><img width="48" height="48" src="https://img.icons8.com/color/48/facebook.png" alt="facebook" rolg="img"/></a>
+                    </div>
+                </div>
+
+
+                <div class="info" role="contentinfo">
+                    <table class="company-info">
+                        <tr>
+                            <th>Address</th>
+                            <td>1385 Woodroffe Ave, Nepean<br>Ottawa ON K2G 1V8</td>
+                        </tr>
+                        <tr>
+                            <th>Phone</th>
+                            <td>+1 613-727-4723</td>
+                        </tr>
+                        <tr>
+                            <th>Fax</th>
+                            <td>+1 613-727-7665</td>
+                        </tr>
+                        <tr>
+                            <th>E-mail</th>
+                            <td>info@steeltorrent.biz</td>
+                        </tr>
+                    </table>
+                </div>
+
+
+                <div class="copyright" role="contentinfo">
+                    <div class="footerlogo">
+                        <a href="index.html">
+                            <img src="images/logo_b_320.png" alt="Logo of Comfy Skin" role="img">
+                        </a>
+                    </div>
+                    <p>Copyright &copy; 2018 by Comfy Skin.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
